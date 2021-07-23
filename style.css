@@ -1,0 +1,196 @@
+
+nav{
+    margin: 10px 10%;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+
+}
+nav ul input{
+      border: none;
+      border-radius: 20px;
+      background-color: blanchedalmond;
+      width: 200px;
+      padding: 5px 20px;
+}
+nav ul li{
+    font-size: 15px;
+     margin-right: 20px;
+}
+/* banner site */
+
+.banner-container{ 
+ margin: 30px 10%;
+
+}
+.banner-text,.banner-image{
+    width: 50%;
+}
+.banner img{
+    width: 70%;
+}
+.banner{
+    display: flex;
+    border-radius: 20px;
+    background-color: lightblue;
+    align-items: center;
+padding: 50px 50px;
+}
+.banner-price{
+    color: rgb(223, 21, 172);
+
+}
+.banner-btn{
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(138, 72, 48),coral);
+}
+.banner-text{
+    justify-content: center;
+    
+}
+.banner-image{
+    display: flex;
+    justify-content: center;
+}
+
+.categories-container{
+     margin: 100px 10%;
+}
+.product-categories{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+   
+}
+.categori{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    align-items: center;
+   
+}
+
+.watch-categori{
+    background-image: linear-gradient(rgb(101, 136, 101),green);
+}
+.bag-categori{
+    background-image: linear-gradient(rgb(158, 146, 146), red);
+
+}
+.shoe-categori{
+    background-image: linear-gradient(rgb(158, 91, 67), coral);
+
+}
+
+
+
+
+
+
+.shoes-container{
+    background-color: rgb(228, 224, 208);
+   padding: 20px 15%;
+}
+.product-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.many-product{
+    color: tomato;
+}
+.shoes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.shoe-box{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+padding: 20px;
+}
+.shoe-box img{
+    width: 100%;
+}
+
+
+
+.footer-container{
+   
+    margin: 30px 10%;
+
+}
+.footer-content{
+    background-color: thistle;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+}
+footer input{
+    border: none;
+      border-radius: 20px;
+      background-color: blanchedalmond;
+      width: 300px;
+      padding: 10px 20px;
+}
+button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 15px;
+   background-color: coral;
+}
+.menu-bar{
+    display: none;
+}
+
+
+
+/* mediaquery */
+
+@media (max-width:1000px) {
+    .product-categories{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .shoes{
+        grid-template-columns: repeat(2,1fr);
+    }  
+    .menu-item{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+}
+
+@media (max-width:600px) {
+    .product-categories{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .shoes{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .menu-item{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+}
+
+@media (max-width:1000px) {
+    .banner{
+        flex-direction: column;
+    }
+    .banner-text{
+        width: 70%;
+    }
+    .banner-image{
+        width: 100%;
+    }
+}
